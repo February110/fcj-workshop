@@ -14,18 +14,18 @@ PeriodIQ live project URL: <https://d1di1pzmfypszp.cloudfront.net>
 
 ### Self-Assessment Summary
 
-| No. | Criteria | Self-Assessment | Level |
-| --- | --- | --- | --- |
-| 1 | Professional knowledge and AWS foundation | I understood the main AWS services used in the project, especially Lambda, API Gateway, S3, DynamoDB, CloudWatch, and SQS. | Good |
-| 2 | Applying knowledge to practice | I applied lab knowledge to a real project by connecting frontend, backend API, Rule Engine logic, and AWS resources. | Good |
-| 3 | Responsibility | I completed the assigned Person 2 scope and prepared the required report/workshop evidence. | Good |
-| 4 | Ability to learn | I learned new AWS services and adjusted the implementation based on project needs. | Good |
-| 5 | Teamwork | I coordinated with other members on user input, `WorkoutPlan` output, authentication flow, and asynchronous notification flow. | Good |
-| 6 | Communication | I was able to report progress and clarify integration requirements, but I still need to communicate blockers earlier. | Fair |
-| 7 | Problem solving | I handled integration and verification issues during the project, especially around API flow, output structure, and logs. | Good |
-| 8 | Documentation | I documented the project flow, AWS services, screenshots, logs, and worklogs, but can still improve consistency and detail. | Fair |
-| 9 | Time management | I completed the main work, but some report content needed revision near the final stage. | Fair |
-| 10 | Overall contribution | I contributed a working workout generation feature and supporting documentation for the final PeriodIQ demo. | Good |
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Professional knowledge & skills | Understanding of AWS fundamentals, applying knowledge in practice, using the required tools, and maintaining work quality. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 2 | Practical application | Applying lab knowledge to the PeriodIQ project by connecting the Workout Plan UI, API route, Lambda Rule Engine, DynamoDB output, and CloudWatch logs. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 3 | Responsibility | Completing the assigned Person 2 scope and preparing the required workshop/report evidence for evaluation. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 4 | Learning attitude | Learning new AWS services when needed and adjusting the implementation based on project requirements. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 5 | Teamwork | Coordinating with teammates on input fields, `WorkoutPlan` output structure, authentication handoff, and final demo flow. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 6 | Communication | Reporting progress and clarifying integration requirements, but still needing to raise blockers earlier. | ☐ | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ |
+| 7 | Problem solving | Handling integration and verification issues around API flow, generated output structure, DynamoDB records, and logs. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 8 | Documentation | Documenting AWS services, screenshots, logs, worklogs, and the product flow, but still needing better consistency. | ☐ | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ |
+| 9 | Time management | Completing the main work on time, but some report content and screenshots were still revised near the final stage. | ☐ | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ |
+| 10 | Overall contribution | Contributing a working workout generation feature and supporting documentation for the final PeriodIQ demo. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
 
 ### Strengths
 

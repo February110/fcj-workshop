@@ -14,18 +14,18 @@ Link dự án PeriodIQ đang chạy: <https://d1di1pzmfypszp.cloudfront.net>
 
 ### Tổng quan tự đánh giá
 
-| STT | Tiêu chí | Tự đánh giá | Mức độ |
-| --- | --- | --- | --- |
-| 1 | Kiến thức chuyên môn và nền tảng AWS | Tôi nắm được các dịch vụ AWS chính dùng trong dự án, đặc biệt là Lambda, API Gateway, S3, DynamoDB, CloudWatch và SQS. | Tốt |
-| 2 | Áp dụng kiến thức vào thực tế | Tôi áp dụng kiến thức từ lab vào dự án thật bằng cách kết nối frontend, backend API, logic Rule Engine và tài nguyên AWS. | Tốt |
-| 3 | Tinh thần trách nhiệm | Tôi hoàn thành scope Người 2 được giao và chuẩn bị các minh chứng cần thiết cho báo cáo/workshop. | Tốt |
-| 4 | Khả năng học hỏi | Tôi học thêm các dịch vụ AWS mới và điều chỉnh cách triển khai theo nhu cầu của dự án. | Tốt |
-| 5 | Làm việc nhóm | Tôi phối hợp với các thành viên khác về user input, output `WorkoutPlan`, luồng xác thực và luồng thông báo bất đồng bộ. | Tốt |
-| 6 | Giao tiếp | Tôi có thể báo cáo tiến độ và làm rõ yêu cầu tích hợp, nhưng vẫn cần chủ động trao đổi sớm hơn khi gặp vướng mắc. | Khá |
-| 7 | Giải quyết vấn đề | Tôi xử lý các vấn đề tích hợp và kiểm tra trong dự án, đặc biệt ở API flow, output structure và logs. | Tốt |
-| 8 | Viết tài liệu | Tôi đã tài liệu hóa project flow, AWS services, screenshots, logs và worklogs, nhưng vẫn có thể cải thiện độ nhất quán và chi tiết. | Khá |
-| 9 | Quản lý thời gian | Tôi hoàn thành phần chính của dự án, nhưng một số nội dung báo cáo vẫn phải chỉnh sửa ở giai đoạn cuối. | Khá |
-| 10 | Đóng góp tổng thể | Tôi đóng góp feature sinh giáo án hoạt động được và tài liệu hỗ trợ cho demo cuối của PeriodIQ. | Tốt |
+| STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Kiến thức chuyên môn & kỹ năng | Hiểu nền tảng AWS, biết áp dụng kiến thức vào thực tế, sử dụng công cụ cần thiết và đảm bảo chất lượng công việc. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 2 | Áp dụng kiến thức vào thực tế | Áp dụng kiến thức từ lab vào PeriodIQ thông qua Workout Plan UI, API route, Lambda Rule Engine, DynamoDB output và CloudWatch logs. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 3 | Tinh thần trách nhiệm | Hoàn thành scope Người 2 được giao và chuẩn bị minh chứng workshop/báo cáo phục vụ đánh giá. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 4 | Khả năng học hỏi | Học thêm các dịch vụ AWS khi cần và điều chỉnh cách triển khai theo yêu cầu của dự án. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 5 | Làm việc nhóm | Phối hợp với thành viên khác về input fields, cấu trúc output `WorkoutPlan`, phần handoff xác thực và demo cuối. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 6 | Giao tiếp | Có báo cáo tiến độ và làm rõ yêu cầu tích hợp, nhưng vẫn cần chủ động báo sớm hơn khi gặp vướng mắc. | ☐ | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ |
+| 7 | Giải quyết vấn đề | Xử lý các vấn đề tích hợp và kiểm tra liên quan đến API flow, output structure, DynamoDB records và logs. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
+| 8 | Viết tài liệu | Tài liệu hóa AWS services, screenshots, logs, worklogs và product flow, nhưng vẫn cần cải thiện độ nhất quán. | ☐ | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ |
+| 9 | Quản lý thời gian | Hoàn thành phần chính đúng tiến độ, nhưng một số nội dung báo cáo và screenshots vẫn phải chỉnh ở giai đoạn cuối. | ☐ | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ |
+| 10 | Đóng góp tổng thể | Đóng góp feature sinh giáo án hoạt động được và tài liệu hỗ trợ cho demo cuối của PeriodIQ. | <span style="color:#22c55e;font-weight:700;">✓</span> | ☐ | ☐ |
 
 ### Điểm mạnh
 
