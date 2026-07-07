@@ -8,24 +8,24 @@ pre: " <b> 1.4. </b> "
 
 ### Week 4 Objectives:
 
-* Learn how AWS supports monitoring, logging, and operational management.
-* Use CloudWatch and Systems Manager to observe and manage cloud resources.
-* Improve troubleshooting skills for AWS infrastructure and application services.
+* Learn the basic monitoring workflow with Amazon CloudWatch.
+* Practice simple resource organization using tags.
+* Get a high-level introduction to Systems Manager without going into advanced operations.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Learn Amazon CloudWatch basics <br>- Review metrics, logs, alarms, and dashboards <br>- Check EC2 monitoring information | 11/05/2026 | 11/05/2026 | <https://000008.awsstudygroup.com/> |
-| 3 | - Study advanced monitoring with CloudWatch and Grafana <br>- Understand custom metrics and dashboard visualization | 12/05/2026 | 12/05/2026 | <https://000029.awsstudygroup.com/><br><https://000036.awsstudygroup.com/> |
-| 4 | - Learn VPC Flow Logs <br>- Enable network traffic logging conceptually <br>- Review how network logs support troubleshooting | 13/05/2026 | 13/05/2026 | <https://000074.awsstudygroup.com/> |
-| 5 | - Learn resource organization with Tags and Resource Groups <br>- Apply tagging strategy for cost, project, and environment tracking | 14/05/2026 | 14/05/2026 | <https://000027.awsstudygroup.com/> |
-| 6 | - Learn AWS Systems Manager and Session Manager <br>- Review remote server access without opening SSH directly <br>- Understand operational automation use cases | 15/05/2026 | 15/05/2026 | <https://000031.awsstudygroup.com/><br><https://000058.awsstudygroup.com/> |
+| 1 | - Learn Amazon CloudWatch basics <br>- Understand metrics, logs, and alarms at a beginner level | 11/05/2026 | 12/05/2026 | <https://000008.awsstudygroup.com/> |
+| 2 | - Continue CloudWatch practice <br>- Review how logs help troubleshoot service behavior <br>- Note examples of useful metrics | 12/05/2026 | 13/05/2026 | <https://000008.awsstudygroup.com/> |
+| 3 | - Learn AWS tags and Resource Groups <br>- Practice organizing resources by project and environment | 13/05/2026 | 14/05/2026 | <https://000027.awsstudygroup.com/> |
+| 4 | - Learn AWS Systems Manager overview <br>- Review the idea of Session Manager and managed instances | 14/05/2026 | 15/05/2026 | <https://000031.awsstudygroup.com/><br><https://000058.awsstudygroup.com/> |
+| 5 | - Summarize monitoring and operations notes <br>- Connect CloudWatch basics to later Lambda troubleshooting | 15/05/2026 | 15/05/2026 | Study notes |
 
 
 ### Week 4 Achievements:
 
-* Understood how CloudWatch collects metrics, logs, and alarms for AWS services.
-* Learned the importance of dashboards and custom metrics for monitoring production systems.
-* Understood how VPC Flow Logs can help analyze network traffic and detect connectivity issues.
-* Applied tagging concepts to organize cloud resources by project, owner, and environment.
-* Learned how Systems Manager and Session Manager support safer server operations.
+* Understood the basic purpose of CloudWatch metrics, logs, and alarms.
+* Learned how logs can support troubleshooting when an AWS service does not behave as expected.
+* Practiced organizing resources with tags and Resource Groups.
+* Learned the high-level purpose of Systems Manager and Session Manager.
+* Prepared monitoring notes that were later useful for checking PeriodIQ Lambda logs.

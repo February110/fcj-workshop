@@ -8,24 +8,24 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-* Strengthen understanding of AWS security services and access control patterns.
-* Learn how to protect applications, secrets, data, and infrastructure.
-* Apply security best practices when designing a cloud-based backend system.
+* Review AWS security fundamentals before starting serverless project work.
+* Focus on a small set of security services that relate to web applications.
+* Learn the concepts only at a practical beginner level.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Review IAM policies and permission conditions <br>- Understand least privilege and policy evaluation basics | 18/05/2026 | 18/05/2026 | <https://000044.awsstudygroup.com/><br><https://000030.awsstudygroup.com/> |
-| 3 | - Learn AWS Security Hub overview <br>- Review security compliance and finding aggregation concepts | 19/05/2026 | 19/05/2026 | <https://000018.awsstudygroup.com/> |
-| 4 | - Learn AWS WAF <br>- Understand web ACLs, rules, and request filtering for application protection | 20/05/2026 | 20/05/2026 | <https://000026.awsstudygroup.com/> |
-| 5 | - Learn AWS KMS and encryption basics <br>- Review customer-managed keys and data encryption use cases | 21/05/2026 | 21/05/2026 | <https://000033.awsstudygroup.com/> |
-| 6 | - Learn AWS Secrets Manager and S3 Security Best Practices <br>- Review safe handling of credentials and secure storage configuration | 22/05/2026 | 22/05/2026 | <https://000096.awsstudygroup.com/><br><https://000069.awsstudygroup.com/> |
+| 1 | - Review IAM policy structure <br>- Understand least privilege, actions, resources, and policy statements | 18/05/2026 | 19/05/2026 | <https://000044.awsstudygroup.com/><br><https://000030.awsstudygroup.com/> |
+| 2 | - Continue IAM review <br>- Read examples of overly broad permissions and how to narrow them | 19/05/2026 | 20/05/2026 | <https://000044.awsstudygroup.com/><br><https://000030.awsstudygroup.com/> |
+| 3 | - Learn AWS WAF basics <br>- Understand Web ACL and managed rule concepts for a public web app | 20/05/2026 | 21/05/2026 | <https://000026.awsstudygroup.com/> |
+| 4 | - Learn AWS KMS basics <br>- Understand encryption key purpose and common encrypted data use cases | 21/05/2026 | 22/05/2026 | <https://000033.awsstudygroup.com/> |
+| 5 | - Learn AWS Secrets Manager basics <br>- Understand why application secrets should not be hardcoded | 22/05/2026 | 22/05/2026 | <https://000096.awsstudygroup.com/> |
 
 
 ### Week 5 Achievements:
 
-* Improved understanding of IAM policy structure, permission boundaries, and least privilege access.
-* Learned how Security Hub helps centralize security findings and compliance checks.
-* Understood how AWS WAF protects web applications from common request-based attacks.
-* Learned the role of KMS in encrypting data and managing encryption keys.
-* Understood why application credentials should be stored in Secrets Manager instead of source code or plain text files.
+* Reviewed least privilege IAM policy design and the importance of scoped permissions.
+* Understood why public web applications may need WAF protection.
+* Learned the basic role of KMS in encryption.
+* Learned why secrets should be stored outside source code.
+* Prepared security notes that later helped when reviewing the PeriodIQ architecture.

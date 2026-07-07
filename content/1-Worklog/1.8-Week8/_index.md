@@ -8,24 +8,24 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* Design the Rule Engine logic for generating a 4-week workout plan in PeriodIQ.
-* Break the algorithm into clear rule stages: Volume Filter, Conflict Resolution, and Progression Builder.
-* Prepare project integration points with DynamoDB and the asynchronous notification flow.
+* Design the first practical version of the Rule Engine logic for PeriodIQ.
+* Break the algorithm into a small number of understandable rule stages.
+* Prepare the DynamoDB output structure needed by the frontend detail page.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Design the Volume Filter rule based on goal, fitness level, and days per week | 08/06/2026 | 08/06/2026 | PeriodIQ Rule Engine design notes |
-| 3 | - Design Conflict Resolution rules for physical limitations, CNS stress, and unsafe overload conditions | 09/06/2026 | 09/06/2026 | PeriodIQ training rule notes |
-| 4 | - Design the Progression Builder for Week 1 base volume, Week 2 volume overload, Week 3 peak intensity, and Week 4 deload | 10/06/2026 | 10/06/2026 | PeriodIQ periodization notes |
-| 5 | - Define the DynamoDB output structure for `WorkoutPlan.Weeks`, including week, day, exercise, set, rep, RPE, rest time, and target weight | 11/06/2026 | 11/06/2026 | PeriodIQ DynamoDB schema notes |
-| 6 | - Review async continuation after plan generation, including SQS message and later progress/notification flow | 12/06/2026 | 12/06/2026 | PeriodIQ team integration notes |
+| 1 | - Review the training inputs needed by the Rule Engine <br>- Confirm which fields are required for the first version | 08/06/2026 | 08/06/2026 | PeriodIQ Rule Engine design notes |
+| 2 | - Design Volume Filter at a basic level <br>- Decide how goal, fitness level, and days per week affect weekly volume | 09/06/2026 | 10/06/2026 | PeriodIQ training rule notes |
+| 3 | - Design simple Conflict Resolution rules <br>- Avoid obviously unsafe combinations and overloaded training days | 10/06/2026 | 11/06/2026 | PeriodIQ training rule notes |
+| 4 | - Design the first Progression Builder draft <br>- Plan Week 1 base, Week 2 increase, Week 3 harder week, and Week 4 deload | 11/06/2026 | 12/06/2026 | PeriodIQ periodization notes |
+| 5 | - Draft the DynamoDB output structure for `WorkoutPlan.Weeks` <br>- Keep the output focused on week, day, exercise, sets, reps, and target weight | 12/06/2026 | 12/06/2026 | PeriodIQ DynamoDB schema notes |
 
 
 ### Week 8 Achievements:
 
-* Designed the main algorithm stages for the PeriodIQ Rule Engine.
-* Defined the expected 4-week periodization structure.
-* Planned how physical limitations and recovery rules affect the generated plan.
-* Defined the nested DynamoDB output used by the frontend detail page.
-* Prepared the handoff between Rule Engine output and the async processing flow.
+* Designed the first version of the PeriodIQ Rule Engine stages.
+* Defined a simple 4-week periodization structure.
+* Planned basic safety rules without over-expanding the algorithm.
+* Drafted the nested DynamoDB output needed by the frontend detail page.
+* Kept async notification work outside my main Person 2 implementation scope.

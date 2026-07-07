@@ -6,19 +6,19 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Nhật ký công việc này tổng hợp quá trình vừa học AWS vừa làm dự án cuối kỳ của nhóm, **PeriodIQ**. Từ tuần 6 trở đi, công việc được triển khai song song: học các dịch vụ AWS từ bài lab, sau đó áp dụng phần phù hợp vào vai trò của tôi là **Người 2 - Rule Engine & Sinh giáo án**. Các công việc triển khai dự án dùng ghi chú thiết kế PeriodIQ, source code, ghi chú tích hợp nhóm, screenshot và logs làm minh chứng thay vì gán link bài lab.
+Nhật ký công việc này tổng hợp quá trình vừa học AWS vừa làm dự án cuối kỳ của nhóm, **PeriodIQ**. Lịch học được viết theo hướng thực tế hơn: một số bài lab được học qua nhiều ngày, và không phải dịch vụ AWS nào cũng được đào sâu. Từ tuần 6 trở đi, công việc được triển khai song song: học các dịch vụ AWS từ bài lab, sau đó chỉ áp dụng phần phù hợp vào vai trò của tôi là **Người 2 - Rule Engine & Sinh giáo án**. Các công việc triển khai dự án dùng ghi chú thiết kế PeriodIQ, source code, ghi chú tích hợp nhóm, screenshot và logs làm minh chứng thay vì gán link bài lab.
 
 Link dự án PeriodIQ đang chạy: <https://d1di1pzmfypszp.cloudfront.net>
 
-**Tuần 1:** [AWS account, IAM, VPC và EC2 cơ bản](1.1-week1/)
+**Tuần 1:** [Thiết lập AWS account, IAM cơ bản, VPC nhập môn và EC2 cơ bản](1.1-week1/)
 
-**Tuần 2:** [S3, static website hosting, CloudFront, Route 53 và AWS CLI](1.2-week2/)
+**Tuần 2:** [S3 storage, static website hosting và CloudFront cơ bản](1.2-week2/)
 
-**Tuần 3:** [RDS, DynamoDB và ElastiCache](1.3-week3/)
+**Tuần 3:** [RDS và DynamoDB cơ bản](1.3-week3/)
 
-**Tuần 4:** [CloudWatch, VPC Flow Logs, tagging và Systems Manager](1.4-week4/)
+**Tuần 4:** [CloudWatch monitoring, resource tagging và Systems Manager cơ bản](1.4-week4/)
 
-**Tuần 5:** [Security services, KMS, WAF và Secrets Manager](1.5-week5/)
+**Tuần 5:** [Ôn IAM, WAF, KMS và Secrets Manager cơ bản](1.5-week5/)
 
 **Tuần 6:** [Học backend serverless và map vào PeriodIQ](1.6-week6/)
 

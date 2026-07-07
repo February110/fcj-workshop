@@ -8,24 +8,24 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-* Understand object storage and static website hosting with Amazon S3.
-* Learn the role of CloudFront and Route 53 in content delivery and DNS management.
-* Practice AWS CLI commands to manage AWS resources more efficiently.
+* Learn Amazon S3 storage fundamentals across multiple practice days.
+* Understand static website hosting with S3 and the basic role of CloudFront.
+* Keep the scope focused on storage and content delivery instead of covering too many services in one week.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Learn Amazon S3 basics <br>- Create and configure an S3 bucket <br>- Upload and organize objects <br>- Review bucket policy and versioning | 27/04/2026 | 27/04/2026 | <https://000057.awsstudygroup.com/> |
-| 3 | - Practice static website hosting with Amazon S3 <br>- Configure index and error documents <br>- Test public website endpoint <br>- Review S3 security settings | 28/04/2026 | 28/04/2026 | <https://000057.awsstudygroup.com/><br><https://000069.awsstudygroup.com/> |
-| 4 | - Learn Amazon CloudFront <br>- Create a distribution for static content <br>- Understand cache behavior, origin, and edge locations | 29/04/2026 | 29/04/2026 | <https://000094.awsstudygroup.com/> |
-| 5 | - Learn Route 53 fundamentals <br>- Review hosted zones, records, and DNS routing concepts <br>- Understand how domains connect to AWS resources | 30/04/2026 | 30/04/2026 | <https://000010.awsstudygroup.com/> |
-| 6 | - Learn AWS CLI operations <br>- Configure CLI profile <br>- Practice S3 and EC2 commands <br>- Compare Console-based and CLI-based management | 01/05/2026 | 01/05/2026 | <https://000011.awsstudygroup.com/> |
+| 1 | - Learn Amazon S3 fundamentals <br>- Create a bucket and upload objects <br>- Review bucket naming and object structure | 27/04/2026 | 28/04/2026 | <https://000057.awsstudygroup.com/> |
+| 2 | - Continue S3 practice <br>- Review basic permissions and public access settings <br>- Note common mistakes when exposing files publicly | 28/04/2026 | 29/04/2026 | <https://000057.awsstudygroup.com/> |
+| 3 | - Practice S3 static website hosting <br>- Configure a simple index page <br>- Test the static website endpoint | 29/04/2026 | 30/04/2026 | <https://000057.awsstudygroup.com/> |
+| 4 | - Learn Amazon CloudFront at a basic level <br>- Understand CDN, cache, edge location, and origin concepts | 30/04/2026 | 01/05/2026 | <https://000094.awsstudygroup.com/> |
+| 5 | - Review what was learned from S3 and CloudFront <br>- Connect the lesson to how a frontend can be hosted in AWS | 01/05/2026 | 01/05/2026 | Lab notes |
 
 
 ### Week 2 Achievements:
 
-* Created and managed S3 buckets, uploaded files, and reviewed common storage configuration options.
-* Understood how S3 can be used for static website hosting and why bucket permissions must be carefully configured.
-* Learned how CloudFront improves content delivery through edge caching.
-* Understood basic DNS concepts in Route 53 and how domain records point to AWS resources.
-* Used AWS CLI to perform basic resource operations and became more familiar with command-line workflows.
+* Created and configured S3 buckets for object storage.
+* Practiced static website hosting with a simple HTML page.
+* Understood basic S3 permission behavior and why public access must be controlled.
+* Learned the purpose of CloudFront as a CDN in front of static content.
+* Built a foundation for understanding the later PeriodIQ frontend hosting flow.

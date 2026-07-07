@@ -8,24 +8,24 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu tuần 3:
 
-* So sánh dịch vụ cơ sở dữ liệu quan hệ, NoSQL và caching trên AWS.
-* Thực hành tạo tài nguyên database và hiểu kết nối an toàn.
-* Xác định lựa chọn database phù hợp cho phát triển backend application.
+* Học sự khác nhau cơ bản giữa relational database và NoSQL database trên AWS.
+* Học Amazon RDS và DynamoDB qua nhiều ngày, không thêm quá nhiều dịch vụ database khác.
+* Ghi chú các điểm có thể dùng cho quyết định lưu trữ dữ liệu trong PeriodIQ.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | - Tìm hiểu Amazon RDS cơ bản <br>- Xem database engine, instance class, storage, subnet group và security group settings | 04/05/2026 | 04/05/2026 | <https://000005.awsstudygroup.com/> |
-| 3 | - Thực hành tạo RDS database <br>- Cấu hình connection settings <br>- Xem backup, multi-AZ và maintenance options | 05/05/2026 | 05/05/2026 | <https://000005.awsstudygroup.com/> |
-| 4 | - Tìm hiểu Amazon DynamoDB cơ bản <br>- Tạo table và định nghĩa partition key <br>- Insert, scan và query sample items | 06/05/2026 | 06/05/2026 | <https://000060.awsstudygroup.com/> |
-| 5 | - So sánh RDS và DynamoDB cho các application use case <br>- Xem access patterns và khác biệt data model <br>- Tìm hiểu advanced DynamoDB design concepts | 07/05/2026 | 07/05/2026 | <https://000060.awsstudygroup.com/><br><https://000039.awsstudygroup.com/> |
-| 6 | - Tìm hiểu tổng quan Amazon ElastiCache <br>- Hiểu use case caching với Redis/Memcached <br>- Xem caching cải thiện performance ứng dụng như thế nào | 08/05/2026 | 08/05/2026 | <https://000061.awsstudygroup.com/> |
+| 1 | - Học Amazon RDS fundamentals <br>- Hiểu database engine, DB instance, endpoint, storage và backup concepts | 04/05/2026 | 05/05/2026 | <https://000005.awsstudygroup.com/> |
+| 2 | - Tiếp tục thực hành RDS <br>- Xem security group và connection settings <br>- Ghi chú khi nào relational database phù hợp | 05/05/2026 | 06/05/2026 | <https://000005.awsstudygroup.com/> |
+| 3 | - Học Amazon DynamoDB fundamentals <br>- Hiểu table, item, attribute, partition key và sort key | 06/05/2026 | 07/05/2026 | <https://000060.awsstudygroup.com/> |
+| 4 | - Tiếp tục thực hành DynamoDB <br>- Xem simple read/write access patterns <br>- So sánh basic DynamoDB và RDS use cases | 07/05/2026 | 08/05/2026 | <https://000060.awsstudygroup.com/> |
+| 5 | - Tổng hợp bài học database <br>- Viết ghi chú vì sao một project serverless có thể chọn DynamoDB cho generated workout plans | 08/05/2026 | 08/05/2026 | Ghi chú học tập |
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu sự khác nhau giữa relational database, NoSQL database và in-memory cache services.
-* Thực hành tạo RDS và xem cấu hình network/security của database.
-* Tạo DynamoDB table và học các thao tác cơ bản như put, scan và query.
-* So sánh lựa chọn database cho backend systems và hiểu tầm quan trọng của access pattern design.
-* Hiểu cách caching giảm tải database và cải thiện response time của ứng dụng.
+* Hiểu khác biệt cơ bản giữa relational database và NoSQL database.
+* Xem các cấu hình quan trọng của RDS như endpoint và security group.
+* Học các khái niệm chính của DynamoDB gồm table, item, attribute, partition key và sort key.
+* So sánh RDS và DynamoDB ở mức nhập môn dựa trên structure và access patterns.
+* Chuẩn bị ghi chú đơn giản cho thiết kế DynamoDB output của PeriodIQ về sau.
