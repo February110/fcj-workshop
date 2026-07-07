@@ -23,11 +23,11 @@ chapter: false
 
 &emsp; **Class:** 22DTHD5
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
-&emsp; **Internship Position:** FCJ Cloud Intern
+&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
+&emsp; **Internship Duration:** From 20/04/2026 to 12/7/2026
 
 ![Your profile picture](images/avatar.png)
 
