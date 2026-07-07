@@ -1,58 +1,31 @@
 ---
 title: "Worklog Tuần 6"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Học các pattern backend serverless và map vào Rule Engine của PeriodIQ.
+* Tách rõ ghi chú học lab AWS với ghi chú triển khai dự án PeriodIQ.
+* Chuẩn bị ghi chú thiết kế backend cho endpoint sinh giáo án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Học Lambda handler structure, runtime settings, environment variables và execution role | 25/05/2026 | 25/05/2026 | <https://000022.awsstudygroup.com/> |
+| 3 | - Áp dụng phần học Lambda vào bản nháp Rule Engine của PeriodIQ <br>- Xác định cách Rule Engine có thể chạy như một API path backed by Lambda | 26/05/2026 | 26/05/2026 | Ghi chú thiết kế backend PeriodIQ |
+| 4 | - Học thiết kế route API Gateway và cách Lambda truy cập DynamoDB | 27/05/2026 | 27/05/2026 | <https://000066.awsstudygroup.com/><br><https://000078.awsstudygroup.com/><br><https://000060.awsstudygroup.com/> |
+| 5 | - Phác thảo request/response cho `POST /api/workoutplans/generate` <br>- Xác định các field cần có cho giáo án đã sinh như `Goal`, `FitnessLevel`, `StartDate`, `EndDate` và `Weeks` | 28/05/2026 | 28/05/2026 | Ghi chú API và schema DynamoDB của PeriodIQ |
+| 6 | - Tổng hợp request path serverless cho vai trò của tôi: S3 frontend -> API Gateway -> Lambda Rule Engine -> DynamoDB -> CloudWatch | 29/05/2026 | 29/05/2026 | Ghi chú kiến trúc PeriodIQ |
 
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Xác định các backend services cần cho chức năng sinh giáo án.
+* Phác thảo API route và payload structure cho plan generation.
+* Xác định các field output DynamoDB mà Rule Engine cần tạo.
+* Tách link lab cho phần học AWS và ghi chú PeriodIQ cho phần làm dự án.
+* Chuẩn bị được serverless architecture path rõ ràng cho scope Người 2.

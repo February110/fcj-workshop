@@ -1,57 +1,31 @@
 ---
 title: "Week 8 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Design the Rule Engine logic for generating a 4-week workout plan in PeriodIQ.
+* Break the algorithm into clear rule stages: Volume Filter, Conflict Resolution, and Progression Builder.
+* Prepare project integration points with DynamoDB and the asynchronous notification flow.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Design the Volume Filter rule based on goal, fitness level, and days per week | 08/06/2026 | 08/06/2026 | PeriodIQ Rule Engine design notes |
+| 3 | - Design Conflict Resolution rules for physical limitations, CNS stress, and unsafe overload conditions | 09/06/2026 | 09/06/2026 | PeriodIQ training rule notes |
+| 4 | - Design the Progression Builder for Week 1 base volume, Week 2 volume overload, Week 3 peak intensity, and Week 4 deload | 10/06/2026 | 10/06/2026 | PeriodIQ periodization notes |
+| 5 | - Define the DynamoDB output structure for `WorkoutPlan.Weeks`, including week, day, exercise, set, rep, RPE, rest time, and target weight | 11/06/2026 | 11/06/2026 | PeriodIQ DynamoDB schema notes |
+| 6 | - Review async continuation after plan generation, including SQS message and later progress/notification flow | 12/06/2026 | 12/06/2026 | PeriodIQ team integration notes |
 
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Designed the main algorithm stages for the PeriodIQ Rule Engine.
+* Defined the expected 4-week periodization structure.
+* Planned how physical limitations and recovery rules affect the generated plan.
+* Defined the nested DynamoDB output used by the frontend detail page.
+* Prepared the handoff between Rule Engine output and the async processing flow.

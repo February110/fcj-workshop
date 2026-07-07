@@ -1,57 +1,31 @@
 ---
 title: "Week 12 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Finalize the Person 2 PeriodIQ workshop and report content.
+* Prepare the final demo for generating and viewing a 4-week workout plan.
+* Review cleanup considerations without deleting shared team resources required for evaluation.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Review the complete Person 2 scope: Lambda API Handler, Lambda Rule Engine, S3 Workout Plan UI, DynamoDB output, and CloudWatch logs | 06/07/2026 | 06/07/2026 | PeriodIQ final scope checklist |
+| 3 | - Run the final product demo path: login, open Workout Plan, enter training parameters, generate a plan, and view detail | 07/07/2026 | 07/07/2026 | PeriodIQ final demo checklist<br><https://d1di1pzmfypszp.cloudfront.net> |
+| 4 | - Validate the final plan output: 4-week structure, progression, deload week, exercise targets, RPE, rest time, and target weights | 08/07/2026 | 08/07/2026 | Generated plan screenshots |
+| 5 | - Finalize workshop pages for Architecture & AWS Services and Workout Plan Product Flow with screenshots and explanations | 09/07/2026 | 09/07/2026 | PeriodIQ workshop draft |
+| 6 | - Complete self-review and final report notes for my contribution to PeriodIQ <br>- Mark shared AWS resources that must remain for the final team demo | 10/07/2026 | 10/07/2026 | Final report notes |
 
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed the report and workshop documentation for my Person 2 responsibility.
+* Demonstrated the end-to-end workout generation product flow.
+* Verified that the Rule Engine output is visible as a working feature, not only backend logic.
+* Documented AWS evidence for Lambda, API Gateway, S3, DynamoDB, CloudWatch, and SQS.
+* Prepared final notes for shared-resource handling and project evaluation.

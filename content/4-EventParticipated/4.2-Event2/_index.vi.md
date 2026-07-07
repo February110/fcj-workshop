@@ -1,125 +1,89 @@
 ---
 title: "Event 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Tôi học được gì từ FCAJ Community Day
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Thông tin sự kiện
 
-### Mục Đích Của Sự Kiện
+* **Tên sự kiện:** FCAJ Community Day
+* **Thời gian:** Thứ Bảy, ngày 23/05/2026, 09:00 - 12:00 GMT+7
+* **Địa điểm:** Bitexco Financial Tower, 2 đường Hải Triều, phường Sài Gòn, TP. Hồ Chí Minh, Việt Nam
+* **Vai trò:** Người tham dự
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Minh chứng tham gia
 
-### Danh Sách Diễn Giả
+![Minh chứng tham gia FCAJ Community Day](../../../images/4-EventParticipated/event2.jpg)
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### Diễn giả và chủ đề chính
 
-### Nội Dung Nổi Bật
+* **Tinh Truong** - thiết kế context và cách làm AI thật sự hữu ích.
+* **Anh Pham** - workflow với AI assistant thông qua Amazon Quick.
+* **Thinh Nguyen** - CloudFront từ edge đến origin và lý do CloudFront là nền tảng quan trọng.
+* **Team VIB** - xây dựng UTMorpho từ ý tưởng đến demo trong hackathon 36 giờ.
+* **Duc Dao** - tính không hoàn toàn deterministic của LLM dù cấu hình trông có vẻ deterministic.
+* **Vy Lam** - thiết kế enterprise-grade multi-agent system cho bài toán startup credit scoring.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+### Cảm nhận chung
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+FCAJ Community Day đối với tôi không giống một buổi học lý thuyết thông thường. Buổi này giống một meetup cộng đồng hơn, nơi tôi được nghe các anh chị kỹ sư, sinh viên và builder chia sẻ cách họ dùng AI và AWS trong các dự án thực tế.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+Trước khi tham gia meetup, tôi chủ yếu xem AI như một công cụ để hỏi đáp hoặc hỗ trợ viết code. Sau buổi này, tôi hiểu rằng AI chỉ thật sự hữu ích khi được đặt trong một workflow rõ ràng, có đủ context và kết hợp với thiết kế hệ thống tốt. Tôi cũng học được rằng cloud architecture không chỉ là chọn dịch vụ AWS, mà còn phải nghĩ đến performance, cost, security, reliability và trải nghiệm người dùng.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+### Những điều tôi học được
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### 1. AI cần context tốt, không chỉ cần prompt tốt
 
-#### Domain-Driven Design (DDD)
+Phần chia sẻ về context giúp tôi hiểu vì sao có lúc AI trả lời rất hữu ích, nhưng có lúc lại chung chung. Một prompt ngắn chưa đủ để có kết quả tốt. Chất lượng câu trả lời phụ thuộc vào context mình cung cấp: mục tiêu, ràng buộc, ví dụ, thông tin trước đó và định dạng output mong muốn.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+Điều này thay đổi cách tôi sử dụng AI trong kỳ thực tập. Khi viết báo cáo hoặc mô tả dự án AWS, tôi cố gắng đưa bối cảnh rõ hơn trước khi yêu cầu AI hỗ trợ. Ví dụ, khi viết về PeriodIQ, tôi cần nói rõ vai trò của tôi, luồng Rule Engine, input data và output mong muốn trước khi nhờ AI chỉnh lại nội dung.
 
-#### Event-Driven Architecture
+#### 2. AI có thể hỗ trợ cả workflow, không chỉ là chat
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+Phần Amazon Quick cho tôi thấy AI assistant không chỉ dùng để trò chuyện. AI có thể hỗ trợ khai thác dữ liệu, tạo workflow, chia sẻ knowledge trong team và tạo dashboard hoặc report từ dữ liệu thô.
 
-#### Compute Evolution
+Từ phần này, tôi học được rằng một sản phẩm AI hữu ích không nên chỉ dừng ở việc trả lời câu hỏi. Nó cần giúp người dùng giảm công việc lặp lại và hoàn thành task nhanh hơn. Đây là mindset quan trọng cho các dự án sau này, vì giá trị của AI nên được đo bằng việc nó cải thiện workflow ra sao, không chỉ bằng câu trả lời nghe hay đến mức nào.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### 3. CloudFront không chỉ là CDN
 
-#### Amazon Q Developer
+Phần CloudFront là nội dung liên quan trực tiếp nhất đến dự án AWS của tôi. Trước meetup, tôi hiểu CloudFront chủ yếu là dịch vụ giúp website tĩnh tải nhanh hơn. Sau phần chia sẻ, tôi hiểu CloudFront còn là một edge layer quan trọng cho routing, security, performance, reliability và cost optimization.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+Điều này giúp tôi hiểu rõ hơn về PeriodIQ vì frontend của dự án được host trên S3 và phục vụ qua CloudFront. Người dùng không truy cập S3 trực tiếp. CloudFront trở thành public entry point, giúp cải thiện tốc độ tải và có thể kết hợp với các lớp bảo vệ như WAF. Nhờ vậy, phần S3 + CloudFront trong dự án trở nên dễ hiểu hơn với tôi.
 
-### Những Gì Học Được
+#### 4. Làm sản phẩm cần biết giảm scope
 
-#### Tư Duy Thiết Kế
+Phần chia sẻ hackathon về việc xây dựng UTMorpho trong 36 giờ giúp tôi thấy rằng một team không thể làm tất cả mọi thứ cùng lúc. Team cần xác định vấn đề chính, giảm bớt feature không cần thiết, làm main flow trước và chuẩn bị demo rõ ràng.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Bài học này rất liên quan đến project nhóm PeriodIQ. Một hệ thống sinh giáo án tập luyện có thể mở rộng ra rất nhiều phần: user profile, personal records, templates, progress tracking, notifications, admin pages và nhiều loại rule. Nhưng phần quan trọng nhất là phải làm được luồng chính trước: user nhập thông tin -> Rule Engine xử lý -> sinh giáo án 4 tuần -> lưu kết quả -> hiển thị trên UI.
 
-#### Kiến Trúc Kỹ Thuật
+#### 5. Output của LLM vẫn cần kiểm chứng
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Phần về non-determinism của LLM khá thú vị vì nó cho thấy ngay cả khi cấu hình trông có vẻ deterministic, output vẫn có thể thay đổi do cách model và inference system hoạt động.
 
-#### Chiến Lược Hiện Đại Hóa
+Bài học chính của tôi là không nên tin hoàn toàn vào output của AI. Nếu AI được dùng trong một workflow nghiêm túc, hệ thống cần validation, fallback logic, ràng buộc rõ ràng và human review cho các quyết định quan trọng. Điều này cũng liên hệ với PeriodIQ: dù project của tôi dùng rule-based engine thay vì LLM, giáo án được sinh ra vẫn cần các ràng buộc như volume control, conflict resolution và deload logic để đảm bảo kết quả an toàn.
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+#### 6. Multi-agent system cần trách nhiệm rõ ràng
 
-### Ứng Dụng Vào Công Việc
+Phần cuối về enterprise-grade multi-agent system giúp tôi hiểu rằng dùng nhiều agent không có nghĩa là hệ thống tốt hơn. Mỗi agent cần có vai trò rõ ràng, và toàn hệ thống cần guardrails, compliance checks và lý do thực sự để dùng multi-agent.
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+Tôi học được rằng architecture phải giải quyết vấn đề thật, không phải chỉ để dùng công nghệ mới. Đôi khi một service hoặc một agent đơn giản sẽ tốt hơn nếu workflow không quá phức tạp. Multi-agent chỉ phù hợp khi bài toán đủ lớn và có thể chia trách nhiệm rõ ràng.
 
-### Trải nghiệm trong event
+### Tôi áp dụng vào kỳ thực tập như thế nào
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Sau meetup, tôi liên hệ được nhiều bài học với công việc thực tập:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+* Hiểu rõ hơn luồng frontend S3 + CloudFront trong PeriodIQ.
+* Cải thiện cách trình bày context khi viết báo cáo và workshop pages.
+* Cẩn thận hơn với việc kiểm chứng output, đặc biệt là các kết quả được sinh tự động.
+* Biết cách giải thích một dự án theo hướng problem -> solution -> architecture -> demo, thay vì chỉ liệt kê dịch vụ.
+* Hiểu rằng AI và cloud services chỉ thật sự có giá trị khi hỗ trợ được một workflow thực tế của người dùng.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+### Kết luận cá nhân
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+Buổi meetup giúp tôi có góc nhìn rộng hơn về cả AI và AWS. Nó giúp tôi chuyển từ việc chỉ học từng dịch vụ riêng lẻ sang việc suy nghĩ cách kết hợp các dịch vụ và công cụ trong một sản phẩm thật.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+Với tôi, bài học giá trị nhất là kỹ thuật tốt không chỉ nằm ở việc dùng công nghệ mới. Điều quan trọng hơn là hiểu vấn đề, cung cấp đủ context cho hệ thống, thiết kế một luồng xử lý đáng tin cậy và đảm bảo kết quả cuối cùng thật sự hữu ích cho người dùng.

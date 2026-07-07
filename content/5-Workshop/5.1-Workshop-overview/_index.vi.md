@@ -1,19 +1,27 @@
 ---
 title : "Giới thiệu"
-date : 2024-01-01 
+date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### PeriodIQ là gì?
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+PeriodIQ là một ứng dụng serverless sinh giáo án tập gym cá nhân hoá trong 4 tuần dựa trên trình độ, cân nặng, mục tiêu tập luyện và Personal Record của người dùng, thông qua một rule engine (Volume Filter -> Conflict Resolution -> Progression Builder). Toàn bộ kiến trúc (16 dịch vụ AWS trải trên 8 tầng) được mô tả ở phần [Proposal](../../2-proposal/).
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+#### Team đã chia công việc như thế nào
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+| Mục | Vai trò | Dịch vụ AWS |
+|---|---|---|
+| Lê Hoài Huân | Auth & User Profile | Amazon Cognito, AWS WAF, Amazon CloudFront |
+| **Trần Anh Tài (tôi)** | **Rule Engine & Sinh giáo án** | **Lambda (API Handler + Rule Engine), Amazon S3** |
+| Lê Hữu Duy Hoàng | Tiến trình & Async Notification | Amazon SQS, Lambda Worker, Amazon SNS |
+| Chương Tử Luân | Admin Panel & Data | Lambda Admin API, Amazon DynamoDB, API Gateway |
+| Phạm Văn Sỹ | CI/CD & Monitoring | AWS CodePipeline, AWS CodeBuild, CloudFormation/SAM, Amazon CloudWatch |
+
+#### Phạm vi của workshop này
+
+Workshop này mô tả kiến trúc chung của team và tập trung vào **vai trò của tôi, Trần Anh Tài - Rule Engine & Sinh giáo án**. Phần của tôi kiểm tra luồng sinh giáo án từ frontend đến API Gateway, Lambda Rule Engine, DynamoDB và CloudWatch. Các mục còn lại tóm tắt các vai trò hỗ trợ do những thành viên khác phụ trách.
+
+> **Project Note:** deployment live của PeriodIQ được giữ lại cho phần đánh giá cuối, nên báo cáo này không xoá tài nguyên production dùng chung của nhóm.

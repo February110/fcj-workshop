@@ -6,34 +6,41 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+During the First Cloud Journey internship program, I learned AWS through hands-on labs and applied that knowledge to the final team project, **PeriodIQ**.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+My main responsibility in PeriodIQ was **Person 2 - Rule Engine & Workout Generation**. I focused on the workout generation flow, including the API handler, Lambda Rule Engine, Workout Plan UI, DynamoDB output verification, CloudWatch logs, and final demo evidence.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+PeriodIQ live project URL: <https://d1di1pzmfypszp.cloudfront.net>
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+### Self-Assessment Summary
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| No. | Criteria | Self-Assessment | Level |
+| --- | --- | --- | --- |
+| 1 | Professional knowledge and AWS foundation | I understood the main AWS services used in the project, especially Lambda, API Gateway, S3, DynamoDB, CloudWatch, and SQS. | Good |
+| 2 | Applying knowledge to practice | I applied lab knowledge to a real project by connecting frontend, backend API, Rule Engine logic, and AWS resources. | Good |
+| 3 | Responsibility | I completed the assigned Person 2 scope and prepared the required report/workshop evidence. | Good |
+| 4 | Ability to learn | I learned new AWS services and adjusted the implementation based on project needs. | Good |
+| 5 | Teamwork | I coordinated with other members on user input, `WorkoutPlan` output, authentication flow, and asynchronous notification flow. | Good |
+| 6 | Communication | I was able to report progress and clarify integration requirements, but I still need to communicate blockers earlier. | Fair |
+| 7 | Problem solving | I handled integration and verification issues during the project, especially around API flow, output structure, and logs. | Good |
+| 8 | Documentation | I documented the project flow, AWS services, screenshots, logs, and worklogs, but can still improve consistency and detail. | Fair |
+| 9 | Time management | I completed the main work, but some report content needed revision near the final stage. | Fair |
+| 10 | Overall contribution | I contributed a working workout generation feature and supporting documentation for the final PeriodIQ demo. | Good |
 
-### Needs Improvement
+### Strengths
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Built a clearer understanding of serverless architecture through real project work.
+* Completed the Rule Engine and Workout Plan flow for the assigned project role.
+* Connected technical implementation with report evidence such as screenshots, logs, DynamoDB records, and the live CloudFront URL.
+* Improved ability to read AWS console information and verify whether a feature works end to end.
+
+### Areas for Improvement
+
+* Improve planning so report content and screenshots are prepared earlier.
+* Write clearer integration contracts before implementation, especially for shared data structures.
+* Add more test cases for different workout goals, fitness levels, physical limitations, and edge cases.
+* Communicate implementation issues earlier when they affect other team members.
+
+### Overall Reflection
+
+This internship helped me move from learning AWS services separately to understanding how they work together in a real application. Through PeriodIQ, I gained practical experience in building a serverless feature, verifying it on AWS, and documenting the work in a structured report.

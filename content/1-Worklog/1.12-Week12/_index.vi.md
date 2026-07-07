@@ -1,58 +1,31 @@
 ---
 title: "Worklog Tuần 12"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện workshop và nội dung báo cáo cho vai trò Người 2 trong PeriodIQ.
+* Chuẩn bị demo cuối cho luồng tạo và xem giáo án 4 tuần.
+* Rà soát cleanup nhưng không xóa các tài nguyên dùng chung mà nhóm cần giữ để đánh giá.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Rà soát toàn bộ scope Người 2: Lambda API Handler, Lambda Rule Engine, S3 Workout Plan UI, DynamoDB output và CloudWatch logs | 06/07/2026 | 06/07/2026 | Checklist scope cuối của PeriodIQ |
+| 3 | - Chạy final product demo path: login, mở Workout Plan, nhập thông số tập, generate plan và view detail | 07/07/2026 | 07/07/2026 | Checklist demo cuối của PeriodIQ<br><https://d1di1pzmfypszp.cloudfront.net> |
+| 4 | - Kiểm tra final plan output: cấu trúc 4 tuần, progression, deload week, exercise targets, RPE, rest time và target weights | 08/07/2026 | 08/07/2026 | Screenshot giáo án đã sinh |
+| 5 | - Hoàn thiện workshop pages cho Architecture & AWS Services và Workout Plan Product Flow với screenshots và giải thích | 09/07/2026 | 09/07/2026 | Bản nháp workshop PeriodIQ |
+| 6 | - Hoàn thành self-review và ghi chú báo cáo cuối cho đóng góp của tôi trong PeriodIQ <br>- Đánh dấu các AWS resources dùng chung cần giữ lại cho demo cuối của nhóm | 10/07/2026 | 10/07/2026 | Ghi chú báo cáo cuối |
 
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành báo cáo và workshop documentation cho trách nhiệm Người 2 của tôi.
+* Demo được luồng sinh giáo án end-to-end.
+* Xác minh output Rule Engine đã trở thành feature hoạt động trên giao diện, không chỉ là backend logic.
+* Tài liệu hóa AWS evidence cho Lambda, API Gateway, S3, DynamoDB, CloudWatch và SQS.
+* Chuẩn bị ghi chú cuối về shared-resource handling và đánh giá dự án.

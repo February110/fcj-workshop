@@ -5,40 +5,39 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud Journey, giúp team FCJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Chương trình First Cloud Journey mang lại cho tôi một lộ trình học cloud khá thực tế. Chương trình không chỉ dừng lại ở việc đọc tài liệu hoặc làm theo bài lab, mà còn yêu cầu áp dụng kiến thức đã học vào dự án cuối kỳ của nhóm. Điều này giúp quá trình thực tập sát với thực tế hơn và giúp tôi hiểu cách các dịch vụ AWS được sử dụng trong một ứng dụng thật.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+### Trải nghiệm học tập
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Các bài lab AWS giúp tôi xây dựng nền tảng ban đầu. Tôi bắt đầu từ các dịch vụ cơ bản như IAM, VPC, EC2, S3 và DynamoDB, sau đó chuyển sang các dịch vụ liên quan trực tiếp đến dự án PeriodIQ như Lambda, API Gateway, CloudWatch, SQS và triển khai frontend bằng S3/CloudFront.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+Phần giá trị nhất là áp dụng các dịch vụ đó vào PeriodIQ. Với vai trò **Người 2 - Rule Engine & Sinh giáo án**, tôi phải nhìn tổng thể luồng hoạt động thay vì chỉ học từng dịch vụ riêng lẻ: user nhập thông tin, frontend gọi API, Lambda xử lý, DynamoDB lưu output, CloudWatch ghi logs và giao diện hiển thị kết quả cuối.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+### Sự hỗ trợ từ mentor và team
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+Mentor và team hỗ trợ khá tốt khi tôi gặp câu hỏi về AWS services, cấu trúc báo cáo và cách triển khai dự án. Phần hướng dẫn giúp tôi tránh việc chỉ chép lại các bước lab, thay vào đó tập trung giải thích vì sao mỗi dịch vụ được dùng trong dự án của mình.
 
+Việc làm việc nhóm cũng rất quan trọng vì PeriodIQ được chia thành nhiều vai trò. Phần của tôi phụ thuộc vào input từ luồng xác thực và cũng cần tạo output để các luồng khác sử dụng, ví dụ dữ liệu `WorkoutPlan` và message bất đồng bộ sau khi sinh giáo án.
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+### Điều tôi thấy hữu ích nhất
 
+* Các bài lab thực hành giúp tôi hiểu khái niệm cloud nhanh hơn.
+* Dự án cuối kỳ giúp việc học sát thực tế hơn.
+* Cấu trúc báo cáo và workshop giúp tôi biết cách trình bày công việc kỹ thuật rõ ràng.
+* Bản deploy PeriodIQ thật giúp tôi có kết quả cụ thể để kiểm tra và trình bày.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+Link dự án PeriodIQ đang chạy: <https://d1di1pzmfypszp.cloudfront.net>
+
+### Góp ý cải thiện
+
+* Nên có checklist rõ hơn cho minh chứng dự án cuối kỳ, ví dụ screenshots, logs và sơ đồ kiến trúc cần chuẩn bị.
+* Có thể bổ sung thêm ví dụ về cách chuyển kiến thức từ bài lab AWS thành nội dung tài liệu dự án.
+* Nên khuyến khích các nhóm xác định integration contracts sớm hơn, đặc biệt là API payload và database schema dùng chung.
+* Nên tiếp tục giữ yêu cầu làm dự án cuối kỳ vì phần này giúp thực tập sinh liên kết kiến thức AWS với triển khai thực tế.
+
+### Nhận xét cuối
+
+Nhìn chung, kỳ thực tập này hữu ích vì kết hợp được việc học, triển khai, làm việc nhóm và viết tài liệu. Sau chương trình, tôi hiểu rõ hơn về kiến trúc serverless trên AWS và cách trình bày một dự án cloud một cách có hệ thống.

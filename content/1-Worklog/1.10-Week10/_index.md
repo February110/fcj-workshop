@@ -1,57 +1,31 @@
 ---
 title: "Week 10 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete the user-facing Workout Plan feature for PeriodIQ.
+* Verify that frontend input creates a valid 4-week plan through the backend API.
+* Make the Rule Engine output visible and understandable on the product screen.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Build or refine the Workout Plan form in the React/Vite SPA hosted on S3 | 22/06/2026 | 22/06/2026 | PeriodIQ frontend source code |
+| 3 | - Connect the Generate 4-Week Plan button to `POST /api/workoutplans/generate` through API Gateway | 23/06/2026 | 23/06/2026 | PeriodIQ API integration code |
+| 4 | - Verify the generated plan appears in My Plans and can be opened through View Detail | 24/06/2026 | 24/06/2026 | PeriodIQ product test screenshots<br><https://d1di1pzmfypszp.cloudfront.net> |
+| 5 | - Validate UI output: week-by-week progression, day split, exercise list, sets, reps, RPE, rest time, and target weight | 25/06/2026 | 25/06/2026 | PeriodIQ Workout Plan UI checklist<br><https://d1di1pzmfypszp.cloudfront.net> |
+| 6 | - Confirm the periodization result: Week 1 base volume, Week 2 overload, Week 3 peak intensity, and Week 4 deload | 26/06/2026 | 26/06/2026 | PeriodIQ Rule Engine output samples |
 
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed the main user-facing product flow for my role.
+* Verified that the frontend can call the generation API successfully.
+* Confirmed that generated plans are visible in the user's plan list and detail page.
+* Validated that Rule Engine output includes training volume, intensity, rest time, and target weight.
+* Confirmed that the deload week appears as expected in the 4-week program.

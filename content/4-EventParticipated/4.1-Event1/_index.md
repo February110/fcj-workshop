@@ -6,121 +6,70 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# What I Learned from FCAJ Community Day: Learning Habits and AI-Ready Mindset
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### Event Information
 
-### Event Objectives
+* **Event name:** FCAJ Community Day
+* **Date & time:** 09:00, 9 May 2026
+* **Location:** Ho Chi Minh City
+* **Role:** Attendee
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### Evidence of Participation
 
-### Speakers
+![Evidence of participation at FCAJ Community Day](../../images/4-EventParticipated/event1.jpg)
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### My Overall Impression
 
-### Key Highlights
+I attended this FCAJ Community Day meetup with my friends. The event was useful because it did not only introduce AI tools, but also explained how students and developers should build better learning habits, use AI more responsibly, and organize AI-assisted software work.
 
-#### Identifying the drawbacks of legacy application architecture
+Before the meetup, I mostly used AI in a simple way: ask a question, get an answer, then adjust it manually. After listening to the speakers, I realized that this approach is not enough for real work. If I want AI to be useful in study or development, I need a clearer process, better evaluation, and stronger fundamentals.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+### Speakers and Main Topics
 
-#### Transitioning to modern application architecture – Microservices
+* **Huynh Hoang Long** - learning habits and how to make learning more engaging.
+* **Nguyen Tuan Thinh** - automated prompt engineering and improving LLM output quality.
+* **Khang** - what "AI-ready" really means for fresh graduates.
+* **Thao** - BMAD Method for structuring AI-assisted development work.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+### What I Learned
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### 1. Learning needs system design, not only motivation
 
-#### Domain-Driven Design (DDD)
+One idea that stayed with me was that learning should be designed like a system. Social media keeps people engaged because it has a clear loop: trigger, action, reward, and repeated investment. The speaker explained that the same idea can be used in a better direction for learning.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+This made me think about my own study habit. If I only depend on motivation, my learning will not be stable. A better approach is to create small repeatable actions, such as writing notes after each lab, tracking daily progress, and reviewing what I learned at the end of the week. This is also close to how I wrote my weekly worklogs during the internship.
 
-#### Event-Driven Architecture
+#### 2. Prompt engineering should be measured
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+The session about automated prompt engineering helped me understand that prompt quality should not be judged only by feeling. A small wording change can affect LLM output, so prompt improvement should be treated more like an engineering process.
 
-#### Compute Evolution
+I learned that a better way is to define the expected result, create a few test cases, compare different prompt versions, and keep the one that produces the most consistent output. This is useful when I use AI to support report writing, code explanation, or technical documentation.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### 3. Being "AI-ready" still requires strong fundamentals
 
-#### Amazon Q Developer
+The AI-ready fresher session was important for me as a student. It made me realize that knowing how to use AI tools is not enough to stand out. AI can generate code or explanations, but I still need to understand programming fundamentals, debugging, system thinking, Git, testing, and code review.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+The key lesson is that AI should support engineering work, not replace engineering judgment. If I accept AI output without checking it, I may create bugs or misunderstand the problem. This is especially important in cloud projects, where a small configuration mistake can affect security, cost, or availability.
 
-### Key Takeaways
+#### 4. AI-assisted development needs structure
 
-#### Design Mindset
+The BMAD Method session showed me a more structured way to use AI in software development. Instead of using one long chat for everything, the workflow can be split into clearer roles such as analyst, product manager, architect, developer, and QA.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+I learned that this structure helps keep a project organized. Each role produces a clearer output, and the next step can continue from that output. This is better than asking AI to handle planning, architecture, coding, testing, and documentation in one unstructured conversation.
 
-#### Technical Architecture
+### Applying This to My Internship
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+After the meetup, I applied several ideas to my internship work:
 
-#### Modernization Strategy
+* I wrote worklogs more consistently by treating weekly reporting as a small learning loop.
+* I became more careful when using AI to rewrite technical content, because the output still needs review.
+* I used stronger context when asking AI to help with documentation, especially for PeriodIQ.
+* I paid more attention to fundamentals such as AWS service behavior, API flow, DynamoDB output, and CloudWatch logs instead of only relying on generated explanations.
+* I thought about my PeriodIQ role more clearly: input contract, Rule Engine logic, generated output, and validation should be separated and documented step by step.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+### Personal Reflection
 
-### Applying to Work
+This meetup helped me understand that AI is useful only when I use it with discipline. The most valuable point for me was not a specific tool, but the mindset: good learning and good prompting both need a process.
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+For my internship, the event helped me improve how I learn, how I write documentation, and how I check AI-supported output. It also reminded me that as a fresher, my foundation still matters the most. AI can make me faster, but it cannot replace my responsibility to understand and verify the work.

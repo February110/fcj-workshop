@@ -1,59 +1,31 @@
 ---
 title: "Worklog Tuần 9"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Bắt đầu triển khai vai trò của tôi trong PeriodIQ: Rule Engine & Sinh giáo án.
+* Kết nối thuật toán đã thiết kế với backend và frontend components thật.
+* Chuẩn bị test cases cho nhiều user profiles và training goals.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Rà soát kiến trúc nhóm PeriodIQ và xác nhận scope của tôi: Lambda API Handler, Lambda Rule Engine và S3 Workout Plan UI | 15/06/2026 | 15/06/2026 | Ghi chú kiến trúc nhóm PeriodIQ |
+| 3 | - Implement hoặc refine request handling path `/api/workoutplans/generate` và service-layer call | 16/06/2026 | 16/06/2026 | Source code API handler của PeriodIQ |
+| 4 | - Implement các stage chính của Rule Engine: Volume Filter, Conflict Resolution và Progression Builder | 17/06/2026 | 17/06/2026 | Source code Rule Engine của PeriodIQ |
+| 5 | - Thêm test scenarios cho Hypertrophy, Endurance, beginner/intermediate users, số buổi mỗi tuần khác nhau và physical limitations | 18/06/2026 | 18/06/2026 | Test scenarios Rule Engine của PeriodIQ |
+| 6 | - Phối hợp với các thành viên khác về data contracts: user profile input, WorkoutPlan output và SQS message sau khi sinh giáo án | 19/06/2026 | 19/06/2026 | Ghi chú tích hợp nhóm PeriodIQ |
 
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Bắt đầu implementation thật cho vai trò Người 2 trong PeriodIQ.
+* Kết nối workout generation endpoint với backend service logic.
+* Implement các rule stages chính cần cho giáo án 4 tuần.
+* Chuẩn bị scenario-based tests cho nhiều input tập luyện khác nhau.
+* Làm rõ integration contracts với luồng Auth và Async Notification nhưng vẫn giữ đúng scope Người 2 của tôi.
