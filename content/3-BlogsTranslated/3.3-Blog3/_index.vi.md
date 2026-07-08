@@ -92,3 +92,5 @@ Case study này thách thức một giả định quan trọng: **Những gì ch
 Insight cốt lõi: **Serverless ở quy mô lớn đòi hỏi tư duy kỹ sư khác biệt**. Những kỹ thuật tối ưu truyền thống sẽ chạm trần—bạn phải tái thiết kế toàn bộ hệ thống để tiến lên.
 
 **Tham Khảo**: [AWS Architecture Blog: Lessons learned from scaling to 1 million Lambda functions](https://aws.amazon.com/vi/blogs/architecture/lessons-learned-from-scaling-to-1-million-lambda-functions/)
+
+**Facebook:** [AWS Study Group FCJ](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204064110358549/)

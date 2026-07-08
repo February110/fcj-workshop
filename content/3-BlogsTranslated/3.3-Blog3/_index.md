@@ -92,3 +92,5 @@ This case study fundamentally challenges a critical assumption: **What works at 
 The fundamental insight: **Serverless at scale demands a different engineering mindset**. Traditional optimization techniques hit a wall where you must rethink the entire system architecture to move forward.
 
 **Reference**: [AWS Architecture Blog: Lessons learned from scaling to 1 million Lambda functions](https://aws.amazon.com/vi/blogs/architecture/lessons-learned-from-scaling-to-1-million-lambda-functions/)
+
+**Facebook:** [AWS Study Group FCJ](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204064110358549/)

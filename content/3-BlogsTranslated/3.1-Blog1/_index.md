@@ -81,3 +81,4 @@ This case study also shows that:
 **Reference:** [AWS Security Blog - Threat tactic spotlight: subdomain takeover](https://aws.amazon.com/blogs/security/threat-tactic-spotlight-subdomain-takeover/)
 
 **Facebook:** [AWS Study Group FCJ](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2187399542025006/)
+
