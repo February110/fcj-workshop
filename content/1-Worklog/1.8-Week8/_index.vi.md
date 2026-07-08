@@ -28,4 +28,4 @@ pre: " <b> 1.8. </b> "
 * Xác định cấu trúc periodization 4 tuần đơn giản.
 * Lên basic safety rules mà không mở rộng thuật toán quá mức.
 * Phác thảo nested DynamoDB output cần cho frontend detail page.
-* Giữ phần async notification ngoài scope triển khai chính của Người 2.
+* Giữ phần async notification ngoài scope triển khai chính của Rule Engine.

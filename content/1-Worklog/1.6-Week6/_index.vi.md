@@ -10,7 +10,7 @@ pre: " <b> 1.6. </b> "
 
 * Bắt đầu học các dịch vụ backend serverless liên quan đến dự án PeriodIQ.
 * Học Lambda và API Gateway chậm hơn để hiểu request flow.
-* Chỉ map các khái niệm AWS phù hợp vào vai trò Người 2 - Rule Engine & Sinh giáo án.
+* Chỉ map các khái niệm AWS phù hợp vào phần Rule Engine & Sinh giáo án.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |

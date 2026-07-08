@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Nhật ký công việc này tổng hợp quá trình vừa học AWS vừa làm dự án cuối kỳ của nhóm, **PeriodIQ**. Lịch học được viết theo hướng thực tế hơn: một số bài lab được học qua nhiều ngày, và không phải dịch vụ AWS nào cũng được đào sâu. Từ tuần 6 trở đi, công việc được triển khai song song: học các dịch vụ AWS từ bài lab, sau đó chỉ áp dụng phần phù hợp vào vai trò của tôi là **Người 2 - Rule Engine & Sinh giáo án**. Các công việc triển khai dự án dùng ghi chú thiết kế PeriodIQ, source code, ghi chú tích hợp nhóm, screenshot và logs làm minh chứng thay vì gán link bài lab.
+Nhật ký công việc này tổng hợp quá trình vừa học AWS vừa làm dự án cuối kỳ của nhóm, **PeriodIQ**. Lịch học được viết theo hướng thực tế hơn: một số bài lab được học qua nhiều ngày, và không phải dịch vụ AWS nào cũng được đào sâu. Từ tuần 6 trở đi, công việc được triển khai song song: học các dịch vụ AWS từ bài lab, sau đó chỉ áp dụng phần phù hợp vào phần tôi phụ trách là **Rule Engine & Sinh giáo án**. Các công việc triển khai dự án dùng ghi chú thiết kế PeriodIQ, source code, ghi chú tích hợp nhóm, screenshot và logs làm minh chứng thay vì gán link bài lab.
 
 Link dự án PeriodIQ đang chạy: <https://d1di1pzmfypszp.cloudfront.net>
 

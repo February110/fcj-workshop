@@ -24,7 +24,7 @@ pre: " <b> 1.9. </b> "
 
 ### Kết quả đạt được tuần 9:
 
-* Bắt đầu implementation thật cho vai trò Người 2 trong PeriodIQ.
+* Bắt đầu implementation thật cho phần Rule Engine & Sinh giáo án trong PeriodIQ.
 * Kết nối workout generation endpoint với backend service logic.
 * Implement Rule Engine theo từng stage nhỏ thay vì làm tất cả cùng lúc.
 * Sinh được output giáo án 4 tuần cơ bản đầu tiên để test.

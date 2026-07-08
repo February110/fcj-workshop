@@ -24,7 +24,7 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Achievements:
 
-* Started the actual PeriodIQ implementation for my Person 2 role.
+* Started the actual PeriodIQ implementation for my Rule Engine & Workout Generation scope.
 * Connected the workout generation endpoint to backend service logic.
 * Implemented the Rule Engine in smaller stages instead of all at once.
 * Generated the first basic 4-week plan output for testing.

@@ -10,7 +10,7 @@ pre: " <b> 1.6. </b> "
 
 * Start learning serverless backend services that are relevant to the PeriodIQ final project.
 * Study Lambda and API Gateway slowly enough to understand the request flow.
-* Map only the relevant AWS concepts to my role as Person 2 - Rule Engine & Workout Generation.
+* Map only the relevant AWS concepts to my Rule Engine & Workout Generation responsibility.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |

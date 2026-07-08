@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This worklog summarizes the internship learning path and the final team project, **PeriodIQ**. The schedule is written realistically: some lab topics were studied across multiple days, and not every AWS service was explored deeply. From Week 6 onward, the work was done in parallel: learning the AWS services from lab materials, then applying only the relevant parts to my project responsibility as **Person 2 - Rule Engine & Workout Generation**. Project implementation tasks use PeriodIQ project notes, source code, team integration notes, screenshots, and logs as evidence instead of lab links.
+This worklog summarizes the internship learning path and the final team project, **PeriodIQ**. The schedule is written realistically: some lab topics were studied across multiple days, and not every AWS service was explored deeply. From Week 6 onward, the work was done in parallel: learning the AWS services from lab materials, then applying only the relevant parts to my project responsibility: **Rule Engine & Workout Generation**. Project implementation tasks use PeriodIQ project notes, source code, team integration notes, screenshots, and logs as evidence instead of lab links.
 
 PeriodIQ live project URL: <https://d1di1pzmfypszp.cloudfront.net>
 

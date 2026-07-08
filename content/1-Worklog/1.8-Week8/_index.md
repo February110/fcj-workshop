@@ -28,4 +28,4 @@ pre: " <b> 1.8. </b> "
 * Defined a simple 4-week periodization structure.
 * Planned basic safety rules without over-expanding the algorithm.
 * Drafted the nested DynamoDB output needed by the frontend detail page.
-* Kept async notification work outside my main Person 2 implementation scope.
+* Kept async notification work outside my main Rule Engine implementation scope.
