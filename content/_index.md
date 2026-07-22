@@ -18,6 +18,7 @@ chapter: false
 &emsp; **Email:** anhtai1879@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology
+
 &emsp; **Major:** Information Technology
 
 &emsp; **Class:** 22DTHD5
